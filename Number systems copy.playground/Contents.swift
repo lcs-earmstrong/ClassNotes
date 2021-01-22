@@ -267,5 +267,39 @@ for character in value2.reversed() {
  decimalEquivalent2
 
 // print the value (for fun)
-print ("hexadecimal answer")
-    print (decimalEquivalent2)
+print ("hexadecimal answer TEST")
+    print (decimalEquivalent)
+
+
+func getDecimalEquivalent(of value: String, in base:Double) -> Double {
+
+    for character in value.reversed() {
+    
+        if let digit = Double(String(character)) {
+            decimalEquivalent += digit * pow (base, exponent)
+            
+
+        } else {
+    
+            switch character {
+            case "A":
+                decimalEquivalent += 10.0 * pow (base, exponent)
+            case "B":
+                decimalEquivalent += 11.0 * pow (base, exponent)
+            case "C":
+                decimalEquivalent += 12.0 * pow (base, exponent)
+            case "D":
+                decimalEquivalent += 13.0 * pow (base, exponent)
+            case "E":
+                decimalEquivalent += 14.0 * pow (base, exponent)
+            case "F":
+                decimalEquivalent += 15.0 * pow (base, exponent)
+            default:
+                break
+              }
+        }
+exponent += 1
+    }
+    return decimalEquivalent
+    }
+getDecimalEquivalent (of: "11", in: 2.0)

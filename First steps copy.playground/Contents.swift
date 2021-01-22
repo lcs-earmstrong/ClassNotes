@@ -73,3 +73,9 @@ let str2 = "Type annotations"
 let year: Int = 1914
 let height: Double = 5.79
 let GordonComputerStudies : Bool = true
+
+//Arrays are collections of values that are stored as a single value.
+
+
+var score = 95
+score -= 5
