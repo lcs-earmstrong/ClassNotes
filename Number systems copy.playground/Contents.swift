@@ -221,7 +221,7 @@ for character in value1.reversed() {
 // get the value
 decimalEquivalent1
 
-let value2 = "5289FACD"
+let value2 = "123"
 let base2 = 16.0
 //
 // The exponent value at the right most digit
@@ -271,7 +271,7 @@ print ("hexadecimal answer TEST")
     print (decimalEquivalent)
 
 
-func getDecimalEquivalent(of value: String, in base:Double) -> Double {
+func getDecimalEquivalent(of value: String, inBase: Double) -> Double {
 
     for character in value.reversed() {
     
@@ -302,4 +302,53 @@ exponent += 1
     }
     return decimalEquivalent
     }
-getDecimalEquivalent (of: "11", in: 2.0)
+getDecimalEquivalent (of: "51", inBase: 16.0)
+
+func getDecimalEquivalent(of value: String, from numberSystem: numberSystemBase) -> Double {
+    
+    // What base are we converting from?
+    var base = 0.0
+    switch numberSystem {
+    case .binary:
+        base = 2.0
+    case .octal:
+        base = 8.0
+    case .hexidecimal:
+        base = 16.0
+        }
+    
+    let exponent = 0.0
+    
+    var decimalEquivalent = 0.0
+    
+    for character in value.reversed(){
+        
+        if let digit = Double(String(character)) {
+        
+        decimalEquivalent += digit * pow (base, exponent)
+        
+
+    } else {
+
+        switch character {
+        case "A":
+            decimalEquivalent += 10.0 * pow (base, exponent)
+        case "B":
+            decimalEquivalent += 11.0 * pow (base, exponent)
+        case "C":
+            decimalEquivalent += 12.0 * pow (base, exponent)
+        case "D":
+            decimalEquivalent += 13.0 * pow (base, exponent)
+        case "E":
+            decimalEquivalent += 14.0 * pow (base, exponent)
+        case "F":
+            decimalEquivalent += 15.0 * pow (base, exponent)
+        default:
+            break
+          }
+        
+}
+    }
+        return decimalEquivalent
+}
+    getDecimalEquivalent(of: "11", from: .binary)

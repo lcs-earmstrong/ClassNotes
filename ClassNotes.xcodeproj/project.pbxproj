@@ -30,7 +30,7 @@
 		B84024BD25B9CDD5003F58E5 /* First steps copy.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "First steps copy.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B84024BE25B9CDD6003F58E5 /* ALookAtStrings copy.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "ALookAtStrings copy.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B84024BF25B9CDD6003F58E5 /* Number systems copy.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Number systems copy.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		B8553CC925BF31420061FD82 /* shiftyplay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = shiftyplay.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B842C4DC25CC356F00D450C4 /* Structures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Structures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 		B84024A725B9CD9F003F58E5 = {
 			isa = PBXGroup;
 			children = (
-				B8553CC925BF31420061FD82 /* shiftyplay.playground */,
+				B842C4DC25CC356F00D450C4 /* Structures.playground */,
 				B84024BE25B9CDD6003F58E5 /* ALookAtStrings copy.playground */,
 				B84024BB25B9CDCF003F58E5 /* Data Types copy.playground */,
 				B84024BC25B9CDD4003F58E5 /* ExploringOptionals copy.playground */,
