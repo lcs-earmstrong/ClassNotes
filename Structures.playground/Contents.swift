@@ -14,6 +14,7 @@ struct Person {
     var heightInCentimetres: Double
     var massInKilograms: Double
    
+    //Mark: Computed properties
     // Return height in meters
     // A computed property
     var heightInMeters: Double {
@@ -23,17 +24,27 @@ struct Person {
     var bodyMassIndex: Double {
        return massInKilograms / heightInMeters / heightInMeters
     }
+   // MARK: Functions
+    // say hi
+    // A function
+    // Use function over a computed property when we need some info to do the job
+    // In this case, the info (input) we need is the "intro
+  
+    func sayHello(with intro:String) {
+        print(intro + name)
+    }
 
 }
 
 var me = Person(name: "Evan", hairColour: "Orange", age: 15, heightInCentimetres: 157.48, massInKilograms: 50)
-
 me.name
 me.hairColour
 me.age
 me.heightInCentimetres
 me.massInKilograms
-
-
 me.bodyMassIndex
 
+
+// Say hello a few different ways
+me.sayHello(with: "Hi, my name is ")
+me.sayHello(with: "Hey, how are you, I'm ")
