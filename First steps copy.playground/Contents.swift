@@ -79,3 +79,7 @@ let GordonComputerStudies : Bool = true
 
 var score = 95
 score -= 5
+
+// Functions are used to avoid repeating code.
+// Calling a function = running a function
+

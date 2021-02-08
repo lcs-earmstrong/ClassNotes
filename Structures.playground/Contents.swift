@@ -37,12 +37,6 @@ struct Person {
 }
 
 var me = Person(name: "Evan", hairColour: "Orange", age: 15, heightInCentimetres: 157.48, massInKilograms: 50)
-me.name
-me.hairColour
-me.age
-me.heightInCentimetres
-me.massInKilograms
-me.bodyMassIndex
 
 
 // Say hello a few different ways
